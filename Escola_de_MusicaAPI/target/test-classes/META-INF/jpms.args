@@ -1,0 +1,4 @@
+--patch-module
+Escola_de_Musica_N2=_
+--add-reads
+Escola_de_Musica_N2=ALL-UNNAMED

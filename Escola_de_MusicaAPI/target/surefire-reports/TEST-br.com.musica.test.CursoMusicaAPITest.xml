@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.musica.test.CursoMusicaAPITest" time="0.256" tests="33" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="26"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\José\Downloads\Escola_de_Musica\target\test-classes;C:\Users\José\Downloads\Escola_de_Musica\target\classes;C:\Users\José\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\José\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\José\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\José\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\José\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\José\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\José\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\José\.m2\repository\org\mockito\mockito-core\5.2.0\mockito-core-5.2.0.jar;C:\Users\José\.m2\repository\net\bytebuddy\byte-buddy\1.14.1\byte-buddy-1.14.1.jar;C:\Users\José\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.1\byte-buddy-agent-1.14.1.jar;C:\Users\José\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\José\.m2\repository\org\mockito\mockito-junit-jupiter\5.2.0\mockito-junit-jupiter-5.2.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="26"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\José\AppData\Local\Temp\surefire5235858839379373687\surefirebooter-20260507203204513_3.jar C:\Users\José\AppData\Local\Temp\surefire5235858839379373687 2026-05-07T20-32-03_852-jvmRun1 surefire-20260507203204513_1tmp surefire_0-20260507203204513_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\José\Downloads\Escola_de_Musica\target\test-classes;C:\Users\José\Downloads\Escola_de_Musica\target\classes;C:\Users\José\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\José\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\José\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\José\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\José\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\José\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\José\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\José\.m2\repository\org\mockito\mockito-core\5.2.0\mockito-core-5.2.0.jar;C:\Users\José\.m2\repository\net\bytebuddy\byte-buddy\1.14.1\byte-buddy-1.14.1.jar;C:\Users\José\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.1\byte-buddy-agent-1.14.1.jar;C:\Users\José\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\José\.m2\repository\org\mockito\mockito-junit-jupiter\5.2.0\mockito-junit-jupiter-5.2.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\José"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-26.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\José\Downloads\Escola_de_Musica"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\José\AppData\Local\Temp\surefire5235858839379373687\surefirebooter-20260507203204513_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="26.0.1+8-34"/>
+    <property name="user.name" value="José"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\José\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\JOS~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="26.0.1"/>
+    <property name="user.dir" value="C:\Users\José\Downloads\Escola_de_Musica"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-26.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\José\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\José\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\José\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\José\AppData\Local\Microsoft\WindowsApps;C:\Users\José\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\platform-tools;C:\Program Files\Maven\bin;c:\Users\José\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="26.0.1+8-34"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="70.0"/>
+  </properties>
+  <testcase name="testDuracoesValidas(int)[1]" classname="br.com.musica.test.CursoMusicaAPITest" time="0.088"/>
+  <testcase name="testDuracoesValidas(int)[2]" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testDuracoesValidas(int)[3]" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testDuracoesValidas(int)[4]" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testSetDuracaoCurso" classname="br.com.musica.test.CursoMusicaAPITest" time="0.003"/>
+  <testcase name="testProvaFinalIndisponivel" classname="br.com.musica.test.CursoMusicaAPITest" time="0.006">
+    <system-out><![CDATA[Avaliação não disponível: O curso não completou 75% da carga ou não possui alunos suficientes.
+]]></system-out>
+  </testcase>
+  <testcase name="testNumeroAlunosZero" classname="br.com.musica.test.CursoMusicaAPITest" time="0.003"/>
+  <testcase name="testSetNomeCurso" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testNaoPodeRealizarProva" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testPodeRealizarProvaComMinAlunos" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testIniciarEncerrarCurso" classname="br.com.musica.test.CursoMusicaAPITest" time="0.003"/>
+  <testcase name="testProvaFinalComMinAlunosSatisfeito" classname="br.com.musica.test.CursoMusicaAPITest" time="0.004">
+    <system-out><![CDATA[Avaliação final executada.
+]]></system-out>
+  </testcase>
+  <testcase name="testCriarCursoBateriaValido" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testProfessorVazio" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testDuracaoMuitoAlta" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testProfessorNulo" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testUmAluno" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testProvaFinalComPercentualAlto" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testDuracaoMuitoBaixa" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testCursoDesconhecido" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testCriarCursoPianoValido" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testCriarCursoGuitarraValido" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testSetProfessorCurso" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testPodeRealizarProvaComPercentualAlto" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testEncerrarSemIniciar" classname="br.com.musica.test.CursoMusicaAPITest" time="0.002"/>
+  <testcase name="testPercentualNaoNegativo" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testCursoNulo" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testNumeroAlunosNegativo" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testProfessorSoEspacos" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testPercentualMaximo" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testPercentualValido" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testSetNumeroAlunosCurso" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+  <testcase name="testPercentualInicial" classname="br.com.musica.test.CursoMusicaAPITest" time="0.001"/>
+</testsuite>
