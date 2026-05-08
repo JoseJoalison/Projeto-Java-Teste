@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}">Curso</title>
+    <link rel="stylesheet" th:href="@{/css/site.css}" />
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <h1 th:text="${titulo}">Curso</h1>
+        <a class="btn" th:href="@{/cursos}" data-testid="voltar-lista">Voltar</a>
+    </header>
+
+    <section class="card">
+        <form th:action="${curso.id} == null ? @{/cursos} : @{/cursos/{id}(id=${curso.id})}"
+              th:object="${curso}" method="post" class="form">
+            <div class="field">
+                <label for="nome">Nome do curso</label>
+                <input id="nome" type="text" th:field="*{nome}" data-testid="curso-nome" />
+                <span class="error" th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></span>
+            </div>
+            <div class="field">
+                <label for="duracaoMeses">Duracao em meses</label>
+                <input id="duracaoMeses" type="number" min="1" th:field="*{duracaoMeses}" data-testid="curso-duracao" />
+                <span class="error" th:if="${#fields.hasErrors('duracaoMeses')}" th:errors="*{duracaoMeses}"></span>
+            </div>
+            <div class="field">
+                <label for="numeroAlunos">Quantidade de alunos</label>
+                <input id="numeroAlunos" type="number" min="1" th:field="*{numeroAlunos}" data-testid="curso-alunos" />
+                <span class="error" th:if="${#fields.hasErrors('numeroAlunos')}" th:errors="*{numeroAlunos}"></span>
+            </div>
+            <div class="field">
+                <label for="professor">Professor</label>
+                <input id="professor" type="text" th:field="*{professor}" data-testid="curso-professor" />
+                <span class="error" th:if="${#fields.hasErrors('professor')}" th:errors="*{professor}"></span>
+            </div>
+            <div class="actions">
+                <button class="btn primary" type="submit" data-testid="curso-salvar">Salvar</button>
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+</html>

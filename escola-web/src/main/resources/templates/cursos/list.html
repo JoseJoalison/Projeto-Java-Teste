@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de cursos</title>
+    <link rel="stylesheet" th:href="@{/css/site.css}" />
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <h1>Lista de cursos</h1>
+        <a class="btn primary" th:href="@{/cursos/novo}" data-testid="cursos-novo">Novo curso</a>
+    </header>
+
+    <section class="card">
+        <table class="table" data-testid="cursos-tabela">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Duracao (meses)</th>
+                <th>Alunos</th>
+                <th>Professor</th>
+                <th>Acoes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:if="${#lists.isEmpty(cursos)}">
+                <td colspan="6" class="empty">Nenhum curso cadastrado.</td>
+            </tr>
+            <tr th:each="curso : ${cursos}" th:attr="data-testid=${'curso-linha-' + curso.id}">
+                <td th:text="${curso.id}"></td>
+                <td th:text="${curso.nome}"></td>
+                <td th:text="${curso.duracaoMeses}"></td>
+                <td th:text="${curso.numeroAlunos}"></td>
+                <td th:text="${curso.professor}"></td>
+                <td class="actions">
+                    <a class="btn" th:href="@{/cursos/{id}(id=${curso.id})}" th:attr="data-testid=${'curso-ver-' + curso.id}">Ver</a>
+                    <a class="btn" th:href="@{/cursos/{id}/editar(id=${curso.id})}" th:attr="data-testid=${'curso-editar-' + curso.id}">Editar</a>
+                    <form th:action="@{/cursos/{id}/remover(id=${curso.id})}" method="post" class="inline">
+                        <button class="btn danger" type="submit" th:attr="data-testid=${'curso-remover-' + curso.id}">Remover</button>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+</body>
+</html>
