@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso</title>
+    <link rel="stylesheet" th:href="@{/css/site.css}" />
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <h1>Detalhes do curso</h1>
+        <a class="btn" th:href="@{/cursos}" data-testid="voltar-lista">Voltar</a>
+    </header>
+
+    <section class="card">
+        <dl class="detail" data-testid="curso-detalhes">
+            <div>
+                <dt>ID</dt>
+                <dd th:text="${curso.id}"></dd>
+            </div>
+            <div>
+                <dt>Nome</dt>
+                <dd th:text="${curso.nome}"></dd>
+            </div>
+            <div>
+                <dt>Duracao (meses)</dt>
+                <dd th:text="${curso.duracaoMeses}"></dd>
+            </div>
+            <div>
+                <dt>Alunos</dt>
+                <dd th:text="${curso.numeroAlunos}"></dd>
+            </div>
+            <div>
+                <dt>Professor</dt>
+                <dd th:text="${curso.professor}"></dd>
+            </div>
+        </dl>
+        <div class="actions">
+            <a class="btn" th:href="@{/cursos/{id}/editar(id=${curso.id})}" data-testid="curso-editar">Editar</a>
+            <form th:action="@{/cursos/{id}/remover(id=${curso.id})}" method="post" class="inline">
+                <button class="btn danger" type="submit" data-testid="curso-remover">Remover</button>
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>

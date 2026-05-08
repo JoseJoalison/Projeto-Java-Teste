@@ -1,0 +1,5 @@
+br\com\musica\web\service\CursoService.class
+br\com\musica\web\EscolaWebApplication.class
+br\com\musica\web\controller\CursoController.class
+br\com\musica\web\repository\CursoRepository.class
+br\com\musica\web\model\Curso.class
